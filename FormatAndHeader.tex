@@ -23,15 +23,63 @@
 % Befehl für die Aufgabentitel
 \newcommand{\exercise}[1]{\section*{Aufgabe \theexnum\stepcounter{exnum}: #1}} % Befehl für Aufgabentitel
 
+% Informationen
+\newcommand{\firstnameA}{Max}
+\newcommand{\firstnameB}{Klaus}
+\newcommand{\lastnameA}{Mustermann}
+\newcommand{\lastnameB}{Kleber}
+\newcommand{\registrationNumberA}{1234567}
+\newcommand{\registrationNumberB}{1234568}
+
+% Befehl für das Deckblatt
+\newcommand{\modTitle}{\section*{Modellierung Sommersemester 2018}
+Aufgabenblatt \thesheetnr \vspace{0.5cm} \\
+\begin{tabular}{ | l | l | l | }
+ \hline
+ Name & Vorname & Matrikelnummer \\
+ \hline
+ \lastnameA&\firstnameA&\registrationNumberA\\
+ \hline
+ \lastnameB&\firstnameB&\registrationNumberB\\
+ \hline
+\end{tabular} \vspace{0.5cm} \\
+Die Bearbeitung der Aufgabenblätter muss durch zwei in Ilias registrierte Mitglieder des Kurses „Modellierung (SS18)“ erfolgen. \\
+\vspace{3cm}\\
+In der folgenden Tabelle werden die erzielten Punkte eingetragen. \vspace{0.5cm} \\
+\begin{tabular}{ | c | c | c | }
+ \hline
+ Aufgabe & Erreichte Punkte & Bemerkung zur Korrektur \hspace{5cm} \\
+ \hline
+ 1&&\\[8pt]
+ \hline
+ 2&&\\[8pt]
+ \hline
+ 3&&\\[8pt]
+ \hline
+ 4&&\\[8pt]
+ \hline
+ 5&&\\[8pt]
+ \hline
+ 6&&\\[8pt]
+ \hline
+ 7&&\\[8pt]
+ \hline
+ 8&&\\[8pt]
+ \hline
+ Gesamt&&\\[8pt]
+ \hline
+\end{tabular}
+\newpage
+}
+
 % Formatierung der Kopfzeile
 % \ohead: Setzt rechten Teil der Kopfzeile mit
 % Namen und Matrikelnummern aller Bearbeiter
-\ohead{Max Mustermann (1234567)\\
-Klaus Kleber (1234568)\\
-Melanie Marshmallow (1234569)}
+\ohead{\firstnameA \lastnameA (\registrationNumberA)\\
+\firstnameB \lastnameB (\registrationNumberB)}
 % \chead{} kann mittleren Kopfzeilen Teil sezten
 % \ihead: Setzt linken Teil der Kopfzeile mit
 % Modulnamen, Semester und Übungsblattnummer
-\ihead{Datenstrukturen \& Algorithmen\\
-Sommersemester 2017\\
+\ihead{Modellierung\\
+Sommersemester 2018\\
 Übungsblatt \thesheetnr}
